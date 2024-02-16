@@ -1,6 +1,6 @@
 import "../css/Profile.css";
 
-export const Profile = ({ name, country, source, charge, channel }) => {
+export const Profile = ({ name, country, source, charge, channel, tag }) => {
   return (
     <div className="profile-container">
       <img className="img-profile" src={source} alt={name} />
@@ -8,12 +8,16 @@ export const Profile = ({ name, country, source, charge, channel }) => {
       <div className="info-container">
         <h2 className="name">{name}</h2>
         <ul className="list">
-          <li>Country: {country}</li>
-          <li>Charge: {charge}</li>
           <li>
-            YouTube Channel:
+            <span className="resalted">Country: </span> {country}
+          </li>
+          <li>
+            <span className="resalted">Charge: </span> {charge}
+          </li>
+          <li>
+            <span className="resalted">YouTube Channel: </span>
             <a href={channel} target="_blank">
-              {channel}
+              {tag}
             </a>
           </li>
         </ul>

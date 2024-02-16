@@ -9,12 +9,12 @@ ul, li {
   border-radius: 10px;
   color: #fff;
   margin: 2rem;
-  background-color: #02144e;
+  background: linear-gradient(var(--tradewind-600), var(--tradewind-700));
 }
 
 .name{
   margin-bottom: 1rem;
-  color: linear-gradient(blue, pink);
+  color: var(--tradewind-100);
 }
 
 .info-container {
@@ -31,4 +31,8 @@ ul, li {
 
 .list{
   margin-bottom: 1rem;
+}
+
+.resalted {
+  font-weight: bold;
 }

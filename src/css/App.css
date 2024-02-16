@@ -1,3 +1,17 @@
+:root{
+--tradewind-50: #f4f9f8;
+--tradewind-100: #d9eee9;
+--tradewind-200: #b3dcd4;
+--tradewind-300: #85c3b8;
+--tradewind-400: #6aada4;
+--tradewind-500: #428a81;
+--tradewind-600: #336e68;
+--tradewind-700: #2c5956;
+--tradewind-800: #274846;
+--tradewind-900: #243d3c;
+--tradewind-950: #102323;
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -6,5 +20,12 @@
 }
 
 body{
-  background: linear-gradient(#0606a7, #a3777e);
+  background: linear-gradient(var(--tradewind-900), var(--tradewind-950));
+}
+
+.app-container {
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }

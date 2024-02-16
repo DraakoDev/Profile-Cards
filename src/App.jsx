@@ -10,6 +10,7 @@ function App() {
         country="Argentina"
         charge="System enginner"
         channel="https://www.youtube.com/@soydalto"
+        tag="@SoyDalto"
       ></Profile>
       <Profile
         source="/Midu.jpg"
@@ -17,6 +18,7 @@ function App() {
         country="Spain"
         charge="System enginner"
         channel="https://www.youtube.com/@midulive"
+        tag="@MiduDev"
       ></Profile>
       <Profile
         source="/holamundo.png"
@@ -24,6 +26,7 @@ function App() {
         country="Chile"
         charge="System enginner"
         channel="https://www.youtube.com/@HolaMundoDev"
+        tag="@HolaMundoDev"
       ></Profile>
     </div>
   );
