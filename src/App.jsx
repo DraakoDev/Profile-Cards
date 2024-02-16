@@ -8,7 +8,7 @@ function App() {
         source="/Dalto.jpg"
         name="Lucas Dalto"
         country="Argentina"
-        charge="System enginner"
+        charge="System Enginner"
         channel="https://www.youtube.com/@soydalto"
         tag="@SoyDalto"
       ></Profile>
@@ -16,7 +16,7 @@ function App() {
         source="/Midu.jpg"
         name="Miguel Angel Duran"
         country="Spain"
-        charge="System enginner"
+        charge="System Enginner"
         channel="https://www.youtube.com/@midulive"
         tag="@MiduDev"
       ></Profile>
@@ -24,7 +24,7 @@ function App() {
         source="/holamundo.png"
         name="Hola Mundo"
         country="Chile"
-        charge="System enginner"
+        charge="System Enginner"
         channel="https://www.youtube.com/@HolaMundoDev"
         tag="@HolaMundoDev"
       ></Profile>

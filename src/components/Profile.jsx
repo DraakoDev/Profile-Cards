@@ -6,7 +6,7 @@ export const Profile = ({ name, country, source, charge, channel, tag }) => {
       <img className="img-profile" src={source} alt={name} />
 
       <div className="info-container">
-        <h2 className="name">{name}</h2>
+        <span className="name">{name}</span>
         <ul className="list">
           <li>
             <span className="resalted">Country: </span> {country}

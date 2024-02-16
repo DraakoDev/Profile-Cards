@@ -2,17 +2,28 @@ ul, li {
   list-style-type: none;
 }
 
+li {
+  margin-bottom: 0.5rem;
+}
+
 .profile-container{
   display: flex;
   width: 60%;
   padding: 1rem;
   border-radius: 10px;
   color: #fff;
-  margin: 2rem;
+  margin: 1rem;
   background: linear-gradient(var(--tradewind-600), var(--tradewind-700));
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) transform 0.5s;
+}
+
+.profile-container:hover {
+  transform: scale(102%, 102%);
 }
 
 .name{
+  font-size: 2rem;
+  font-weight: bolder;
   margin-bottom: 1rem;
   color: var(--tradewind-100);
 }
@@ -35,4 +46,5 @@ ul, li {
 
 .resalted {
   font-weight: bold;
+  color: var(--tradewind-200);
 }
