@@ -1,11 +1,23 @@
 import "../css/Profile.css";
+import { useState } from "react";
+import { Counter } from "../components/Counter";
 
-export const Profile = ({ name, country, source, charge, channel, tag }) => {
+export const Profile = ({
+  name,
+  country,
+  source,
+  charge,
+  channel,
+  insta,
+  twitter_x,
+}) => {
   return (
     <div className="profile-container">
+      {/* Personal img */}
       <img className="img-profile" src={source} alt={name} />
 
       <div className="info-container">
+        {/* Personal info */}
         <span className="name">{name}</span>
         <ul className="list">
           <li>
@@ -14,20 +26,37 @@ export const Profile = ({ name, country, source, charge, channel, tag }) => {
           <li>
             <span className="resalted">Charge: </span> {charge}
           </li>
-          <li>
-            <span className="resalted">YouTube Channel: </span>
-            <a href={channel} target="_blank">
-              {tag}
-            </a>
-          </li>
         </ul>
 
+        {/* Short description for profile  */}
         <p className="review-container">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nostrum
           amet dolore commodi animi repellendus porro quod similique eius iusto
           cupiditate neque dolorum consequatur at, tenetur obcaecati, sapiente
           quas eligendi.
         </p>
+
+        {/* Button links to social media */}
+        <div>
+          <span>Social Media</span>
+          <div>
+            <Counter>
+              <a href={insta} target="_blank">
+                <img src="svg/instagram.svg" alt="Instagram" />
+              </a>
+            </Counter>
+            <Counter>
+              <a href={channel} target="_blank">
+                <img src="svg/youtube.svg" alt="YouTube" />
+              </a>
+            </Counter>
+            <Counter>
+              <a href={twitter_x} target="_blank">
+                <img src="svg/twitter-x.svg" alt="twitter-x" />
+              </a>
+            </Counter>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import { Counter } from "./components/Counter";
 import { Profile } from "./components/Profile";
 import "./css/App.css";
 
@@ -5,28 +6,31 @@ function App() {
   return (
     <div className="app-container">
       <Profile
-        source="/Dalto.jpg"
+        source="/assets/Dalto.jpg"
         name="Lucas Dalto"
         country="Argentina"
         charge="System Enginner"
         channel="https://www.youtube.com/@soydalto"
-        tag="@SoyDalto"
+        insta="https://www.instagram.com/soydalto/"
+        twitter_x="https://twitter.com/soydalto"
       ></Profile>
       <Profile
-        source="/Midu.jpg"
+        source="/assets/Midu.jpg"
         name="Miguel Angel Duran"
         country="Spain"
         charge="System Enginner"
         channel="https://www.youtube.com/@midulive"
-        tag="@MiduDev"
+        insta="https://www.instagram.com/midu.dev/"
+        twitter_x="https://twitter.com/midudev"
       ></Profile>
       <Profile
-        source="/holamundo.png"
-        name="Hola Mundo"
+        source="/assets/holamundo.png"
+        name="Nicolás Schürmann"
         country="Chile"
         charge="System Enginner"
         channel="https://www.youtube.com/@HolaMundoDev"
-        tag="@HolaMundoDev"
+        insta="https://www.instagram.com/holamundodevv/"
+        twitter_x="https://twitter.com/_nasch_"
       ></Profile>
     </div>
   );
