@@ -1,18 +1,12 @@
 import "../css/Profile.css";
-import { useState } from "react";
 import { Counter } from "../components/Counter";
+import { socialMedia } from "../constans/data";
 
-export const Profile = ({
-  name,
-  country,
-  source,
-  charge,
-  channel,
-  insta,
-  twitter_x,
-}) => {
+export const Profile = ({ info }) => {
+  const { name, country, source, charge, channel, insta, twitter_x } = info;
   return (
     <div className="profile-container">
+      {console.log(name)}
       {/* Personal img */}
       <img className="img-profile" src={source} alt={name} />
 
