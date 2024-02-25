@@ -5,7 +5,7 @@ export const Counter = ({ children }) => {
   const [count, setCount] = useState(0);
   return (
     <button onClick={() => setCount(count + 1)} className="count">
-      {children}# {count}
+      {children} #{count}
     </button>
   );
 };
